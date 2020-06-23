@@ -1,0 +1,118 @@
+
+
+
+<div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+      
+      <h3 class="font-weight-bold pt-5 pb-2">Dummy Blog Book</h3>
+  
+      <div class="row mx-3">
+        <div class="col-md-4 px-4 mb-4">
+  
+          <div class="view">
+            <img src="https://mdbootstrap.com/img/illustrations/drawkit-drawing-man-colour.svg" class="img-fluid" alt="smaple image">
+          </div>
+  
+        </div>
+       <div class="col-md-4 px-4 mb-4">
+  
+          <div class="view">
+            <img src="https://mdbootstrap.com/img/illustrations/drawkit-phone-conversation-colour.svg" class="img-fluid" alt="smaple image">
+          </div>
+  
+        </div>
+        <div class="col-md-4 px-4 mb-4">
+  
+          <div class="view">
+            <img src="https://mdbootstrap.com/img/illustrations/app-user-colour.svg" class="img-fluid" alt="smaple image">
+          </div>
+  
+        </div>
+      </div>
+  
+    </section>
+    <!--Section: Content-->
+  
+  
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+<!-- Default form register -->
+        <form class="text-center border border-light p-5" action="#!">
+
+            <p class="h4 mb-4">Sign up</p>
+
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- First name -->
+                    <input type="text" id="defaultRegisterFormFirstName"  class="form-control" name="name" [(ngModel)]="name" placeholder="First name">
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" name="surname" [(ngModel)]="surname" placeholder="Last name">
+                </div>
+            </div>
+
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4"  name="email" [(ngModel)]="email"placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" name="password" [(ngModel)]="password" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                At least 8 characters and 1 digit
+            </small>
+
+
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block"  (click)="add_user()" routerLink="/home" type="submit" >Sign up</button>
+
+            <!-- Social register -->
+            <p>or sign up with:</p>
+
+            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+            <hr>
+
+            <!-- Terms of service -->
+            <p>By clicking
+                <em>Sign up</em> you agree to our
+                <a href="" target="_blank">terms of service</a>
+
+        </form>
+<!-- Default form register -->
+
+    </div>
+  </div>
+
+
+      <!--Section: Content-->
+      <section class="dark-grey-text text-center">
+      
+        <h3 class="font-weight-bold pt-5 pb-2"></h3>
+    
+      </section>
+      <!--Section: Content-->
+    
+      <!-- Footer -->
+<footer class="page-footer font-small  font-small blue pt-4">
+
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center  font-small blue py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> Dummy Blog Book </a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
