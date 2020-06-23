@@ -1,27 +1,27 @@
 
 
-<div class="container my-5 py-5 z-depth-1">
 
-    <!--Section: Content-->
-    <section class="dark-grey-text text-center">
-      
-      <h3 class="font-weight-bold pt-5 pb-2">Hi, <h1>Admin123</h1></h3>
 
-    </section>
-    <!--Section: Content-->
-  
-  </div>
+
+
+    <div class="container my-5 py-5 z-depth-1">
+        <!--Section: Content-->
+        <section class="dark-grey-text text-center">
+          <h3 class="font-weight-bold pt-5 pb-2">Hi, <h1>Masingita</h1></h3>
+        </section>
+        <!--Section: Content-->
+      </div>   
+
+
 
 
   <div class="row">
     <div class="col-md-4"></div>
-    <div class="col-md-4">
+    <div class="col-md-12">
 
 
         <div class="container">
             <div class="row">
-          
-          
           
               <div class="col-md-12 offset-md- ">
                 <div class="input-group">
@@ -34,53 +34,64 @@
 
                   <div class="col-md-4"></div>
                   
-
               </div> 
-
-
-     
               <!-- Material input -->
-          
               <div>
                 
-      
-
-               
               </div>
           
-          
-              <div class="col-md-12 offset-md-12">
+
+                    <div class="col-md-12 offset-md-12">
             
-                <hr>
-                <div class="alert alert-dark" role="alert" *ngFor="let post of posts; let i = index">
-                  {{post.content}}
+                        <hr>
+                        <div class="alert alert-dark" role="alert" *ngFor="let post of posts; let i = index">
 
-                  <div>{{numberofLikes}}</div>
-                  <button class="btn btn-primary" (click)="likeButtonClick()">Like</button>
-      
-                  <button class="btn btn-danger" (click)="disLikeButtonClick()">DisLike</button>
+                        <h2>Masingita</h2>
+                          {{post.content}}
+        
+                          <div>{{numberofLikes}}</div>
+                          <button class="btn btn-primary" (click)="likeButtonClick()">Like</button>
+              
+                          <button class="btn btn-danger" (click)="disLikeButtonClick()">DisLike</button>
+        
+                          <button class="btn btn-primary" (click)="delete_post(i)">delete</button>
+                          <br>
+                  
+                  
+                          <hr>
+                          <div>
 
-                  <button class="btn btn-primary" (click)="delete_post(i)">delete</button>
-                  <br>
-          
-          
-                  <hr>
-                  <div>
-                    <textarea name="comment" name="comment" #comment></textarea>
-                    <button class="btn btn-primary" (click)="add_comment(i, comment)">Comment</button>
-          
-                    <p *ngFor="let comment of post.comments">{{comment}}<button class="btn btn-primary" (click)="delete_comment(i, comment)">delete</button></p>
-                  </div>
-                </div>
-              </div>
+
+                            <form>
+                                <!-- Default input -->
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput"><h3>Comments</h3></label>
+                                  <input type="text" id="form1" class="form-control"  name="comment" #comment placeholder="Add Comment">
+                                </div>
+
+                              </form>
+
+                            <button class="btn btn-primary" (click)="add_comment(i, comment)">Comment</button>
+                            
+                            <hr>
+                  
+                            <p *ngFor="let comment of post.comments">
+                            {{comment}}<button type="button" class="btn btn-danger" (click)="delete_comment(i, comment)">Delete comment</button></p>
+                            
+                            <br>
+                          </div>
+                        </div>
+                      </div>
+
             </div>
           </div> 
-
-
-
-
     </div>
   </div>
+
+
+
+
+
 
 
 
